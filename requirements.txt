@@ -1,0 +1,30 @@
+# =========================================================================
+# requirements.txt
+# Ταξινόμηση HAM10000 — MobileNetV2 / EfficientNet-B0 / EfficientNetV2-S
+# =========================================================================
+
+# --- Deep Learning framework (PyTorch) ---
+# Η torchvision>=0.16 απαιτείται για το transform v2.CutMix(num_classes=...)
+torch>=2.1.0
+torchvision>=0.16.0
+
+# --- Επεξεργασία δεδομένων & μετρικές ---
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0          # confusion_matrix, classification_report, roc_auc_score
+
+# --- Εικόνες ---
+Pillow>=9.5.0                # from PIL import Image
+
+# --- Οπτικοποίηση ---
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# --- Λήψη του dataset από Google Drive ---
+gdown>=4.7.0
+
+# ------------------------------------------------------------
+# Σημείωση: οι βιβλιοθήκες os και random ανήκουν στην
+# τυπική βιβλιοθήκη της Python και δεν χρειάζονται εγκατάσταση.
+# Συνιστάται Python >= 3.9.
+# ------------------------------------------------------------
